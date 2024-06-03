@@ -61,11 +61,11 @@ class Actions:
             # Accéder au module "Configuration" d'abord
             Actions.access_configuration(driver)
             
-            # Attendre que l'élément soit visible et cliquable, puis cliquer en utilisant JavaScript
+           # Attendre que l'élément contenant "Données générales" soit visible et cliquable, puis cliquer en utilisant JavaScript
             general_data_element = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'div_class_name') and contains(., 'Données générales')]"))
+                EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Données générales')]"))
             )
             driver.execute_script("arguments[0].click();", general_data_element)
             Actions.logger.info("Accès réussi aux Données générales.")
         except Exception as e:
-            Actions.logger.error("Échec de l'accès aux Données générales : %s", str(e))
+            Actions.logger.error("Échec de l'accès aux Données générales : %s\n", str(e))
