@@ -68,4 +68,4 @@ class Actions:
             driver.execute_script("arguments[0].click();", general_data_element)
             Actions.logger.info("Accès réussi aux Données générales.")
         except Exception as e:
-            Actions.logger.error("Échec de l'accès aux Données générales : %s\n", str(e))
+            Actions.logger.error("Échec de l'accès aux Données générales : %s", str(e))
