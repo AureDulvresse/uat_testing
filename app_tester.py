@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
-from medical_data import Actions  # Importer le fichier actions.py
+from medical_data import Actions
 
 class AppTester:
     def __init__(self, app_url: str, username: str, password: str, driver='chrome'):
