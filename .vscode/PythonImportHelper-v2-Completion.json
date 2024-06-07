@@ -25,11 +25,27 @@
         "documentation": {}
     },
     {
+        "label": "ColoredFormatter",
+        "importPath": "colorlog",
+        "description": "colorlog",
+        "isExtraImport": true,
+        "detail": "colorlog",
+        "documentation": {}
+    },
+    {
         "label": "webdriver",
         "importPath": "selenium",
         "description": "selenium",
         "isExtraImport": true,
         "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
         "documentation": {}
     },
     {
@@ -67,18 +83,18 @@
     },
     {
         "label": "Actions",
-        "importPath": "medical_data",
-        "description": "medical_data",
+        "importPath": "labo",
+        "description": "labo",
         "isExtraImport": true,
-        "detail": "medical_data",
+        "detail": "labo",
         "documentation": {}
     },
     {
-        "label": "AppTester",
-        "importPath": "app_tester",
-        "description": "app_tester",
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
         "isExtraImport": true,
-        "detail": "app_tester",
+        "detail": "selenium.webdriver.support.ui",
         "documentation": {}
     },
     {
@@ -98,12 +114,45 @@
         "documentation": {}
     },
     {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "ActionChains",
+        "importPath": "selenium.webdriver.common.action_chains",
+        "description": "selenium.webdriver.common.action_chains",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.action_chains",
+        "documentation": {}
+    },
+    {
+        "label": "AppTester",
+        "importPath": "app_tester",
+        "description": "app_tester",
+        "isExtraImport": true,
+        "detail": "app_tester",
+        "documentation": {}
+    },
+    {
         "label": "AppTester",
         "kind": 6,
         "importPath": "app_tester",
         "description": "app_tester",
         "peekOfCode": "class AppTester:\n    def __init__(self, app_url: str, username: str, password: str, driver='chrome'):\n        self.app_url = app_url\n        self.username = username\n        self.password = password\n        if driver == 'chrome': \n            self.driver = webdriver.Chrome()\n        elif driver == 'edge':\n            self.driver = webdriver.Edge()\n        elif driver == 'firefox':",
         "detail": "app_tester",
+        "documentation": {}
+    },
+    {
+        "label": "Actions",
+        "kind": 6,
+        "importPath": "labo",
+        "description": "labo",
+        "peekOfCode": "class Actions:\n    # Initialisation du logger\n    logger = logging.getLogger(\"Actions\")\n    formatter = ColoredFormatter(\n        \"%(log_color)s%(levelname)s: %(message)s\",\n        log_colors={\n            'DEBUG':    'cyan',\n            'INFO':     'green',\n            'WARNING':  'yellow',\n            'ERROR':    'red',",
+        "detail": "labo",
         "documentation": {}
     },
     {

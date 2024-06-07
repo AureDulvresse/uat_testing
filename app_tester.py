@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
-from medical_data import Actions
+from labo import Actions
 
 class AppTester:
     def __init__(self, app_url: str, username: str, password: str, driver='chrome'):
@@ -65,10 +65,8 @@ class AppTester:
         try:
             self.logger.info("Début des tests UAT")
             self.login()
-            
-            # Utiliser les méthodes de la classe Actions pour naviguer dans l'application
-            Actions.access_configuration(self.driver)
-            Actions.access_general_data(self.driver)
+
+            Actions.access_list_of_bons(self.driver)
 
             self.logger.info("Tous les tests UAT ont été réalisés avec succès !")
 

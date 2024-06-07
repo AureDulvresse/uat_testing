@@ -69,3 +69,5 @@ class Actions:
             Actions.logger.info("Accès réussi aux Données générales.")
         except Exception as e:
             Actions.logger.error("Échec de l'accès aux Données générales : %s", str(e))
+
+        time.sleep(2000)
