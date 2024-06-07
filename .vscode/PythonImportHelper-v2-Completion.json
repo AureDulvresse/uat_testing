@@ -1,0 +1,127 @@
+[
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "ColoredFormatter",
+        "importPath": "colorlog",
+        "description": "colorlog",
+        "isExtraImport": true,
+        "detail": "colorlog",
+        "documentation": {}
+    },
+    {
+        "label": "ColoredFormatter",
+        "importPath": "colorlog",
+        "description": "colorlog",
+        "isExtraImport": true,
+        "detail": "colorlog",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "Keys",
+        "importPath": "selenium.webdriver.common.keys",
+        "description": "selenium.webdriver.common.keys",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.keys",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Actions",
+        "importPath": "medical_data",
+        "description": "medical_data",
+        "isExtraImport": true,
+        "detail": "medical_data",
+        "documentation": {}
+    },
+    {
+        "label": "AppTester",
+        "importPath": "app_tester",
+        "description": "app_tester",
+        "isExtraImport": true,
+        "detail": "app_tester",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "AppTester",
+        "kind": 6,
+        "importPath": "app_tester",
+        "description": "app_tester",
+        "peekOfCode": "class AppTester:\n    def __init__(self, app_url: str, username: str, password: str, driver='chrome'):\n        self.app_url = app_url\n        self.username = username\n        self.password = password\n        if driver == 'chrome': \n            self.driver = webdriver.Chrome()\n        elif driver == 'edge':\n            self.driver = webdriver.Edge()\n        elif driver == 'firefox':",
+        "detail": "app_tester",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    tester = AppTester(\"https://mak.digitaledge-drc.com\", \"aure\", \"Aure14902\")\n    tester.run_tests()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Actions",
+        "kind": 6,
+        "importPath": "medical_data",
+        "description": "medical_data",
+        "peekOfCode": "class Actions:\n    # Initialisation du logger\n    logger = logging.getLogger(\"Actions\")\n    formatter = ColoredFormatter(\n        \"%(log_color)s%(levelname)s: %(message)s\",\n        log_colors={\n            'DEBUG':    'cyan',\n            'INFO':     'green',\n            'WARNING':  'yellow',\n            'ERROR':    'red',",
+        "detail": "medical_data",
+        "documentation": {}
+    }
+]
